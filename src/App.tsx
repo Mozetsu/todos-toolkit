@@ -1,13 +1,7 @@
-import Filters from "./Filters";
-import Todos from "./Todos";
+import Home from "./pages/Home";
 
 function App() {
-	return (
-		<main>
-			<Todos />
-			<Filters />
-		</main>
-	);
+	return <Home />;
 }
 
 export default App;
