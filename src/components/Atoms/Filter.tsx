@@ -9,7 +9,9 @@ function FilterItem({ text, setFilter }: Props) {
 	const { filter } = useAppSelector((state) => state);
 	return (
 		<li
-			className={`border-2 border-indigo-100 rounded-md text-sm ${filter === text && "font-bold bg-indigo-300 text-white"}`}
+			className={`btn btn-ghost rounded flex items-center justify-start ${
+				filter === text && "btn-success"
+			}`}
 			onClick={() => setFilter()}
 		>
 			{text}

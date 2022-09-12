@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
+import mockData from "../../mocks/todos";
 
 export type Todo = {
 	id: string;
@@ -7,7 +8,8 @@ export type Todo = {
 	completed?: boolean;
 };
 
-const initialState: Todo[] = [];
+// const initialState: Todo[] = [];
+const initialState: Todo[] = mockData;
 
 const todosSlice = createSlice({
 	name: "todos",
